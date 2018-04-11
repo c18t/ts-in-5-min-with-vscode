@@ -1,0 +1,19 @@
+{
+  "name": "ts-in-5-min-with-vscode",
+  "version": "0.0.0",
+  "description": "TypeScript in 5 minutes with Visual Studio Code",
+  "main": "index.html",
+  "repository": "https://github.com/c18t/ts-in-5-min-with-vscode",
+  "author": "鵜巷 <u@chimata.org>",
+  "license": "None",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "npm-run-all": "^4.1.2"
+  },
+  "scripts": {
+    "watch:build": "tsc greeter.ts -w",
+    "watch:server": "browser-sync start --server --files './*.js, ./*.html'",
+    "watch": "npm-run-all -p watch:*"
+  }
+}
